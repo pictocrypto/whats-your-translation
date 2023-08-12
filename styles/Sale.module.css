@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Pictocrypto-Regular';
-  src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
-       url('/fonts/Pictocrypto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .title {
   padding: 8px;
   font-size: 3rem;

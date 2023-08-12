@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Pictocrypto-Regular';
-  src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
-       url('/fonts/Pictocrypto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .container {
   max-width: 100%;
   display: flex;
@@ -71,7 +63,6 @@
   top: 10px;
   right: 10px;
   transition: background-color 0.2s ease-in-out;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .crossButton:hover {
@@ -106,7 +97,6 @@
   margin-bottom: 4px;
   margin-left: 16px;
   margin-right: 16px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .nftOwnerContainer {
@@ -143,32 +133,27 @@
   flex-direction: column;
   height: 100%;
   margin-top: 16px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .label {
   color: rgba(255, 255, 255, 0.6);
   margin: 0px;
   margin-bottom: 4px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .nftOwnerAddress {
   font-weight: 600;
   margin: 0px;
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Pictocrypto-Regular';
 }
 
 .descriptionContainer {
   padding-left: 16px;
   padding-right: 16px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .descriptionTitle {
   margin-top: 32px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .traitsContainer {
@@ -177,7 +162,6 @@
   flex-wrap: wrap;
   gap: 16px;
   margin-top: 12px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .traitContainer {
@@ -190,7 +174,6 @@
   min-width: 128px;
   border-radius: 16px;
   min-height: 32px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .eventsContainer {
@@ -205,28 +188,24 @@
   min-width: 128px;
   border-radius: 16px;
   min-height: 32px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .traitValue {
   font-weight: 600;
   margin: 0px;
   color: rgba(255, 255, 255, 0.9);
-  font-family: 'Pictocrypto-Regular';
 }
 
 .traitName {
   font-weight: 400;
   margin: 0px;
   color: rgba(255, 255, 255, 0.6);
-  font-family: 'Pictocrypto-Regular';
 }
 
 .eventContainer {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .txHashArrow {
@@ -247,7 +226,6 @@
   overflow: hidden;
   margin-top: 32px;
   margin-bottom: 24px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .pricingInfo {
@@ -257,7 +235,6 @@
   width: 100%;
   margin: 0px;
   margin-bottom: 12px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .pricingValue {
@@ -267,13 +244,11 @@
   color: rgba(255, 255, 255, 0.9);
   margin: 0px;
   border-radius: 8px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .buyButton:hover {
   cursor: pointer;
   opacity: 0.8 !important;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .listingTimeContainer {
@@ -282,7 +257,6 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .listingTime {
@@ -291,13 +265,11 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin: 0px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .or {
   margin-top: 16px;
   margin-bottom: 16px;
-  font-family: 'Pictocrypto-Regular';
 }
 
 @media (max-width: 960px) {

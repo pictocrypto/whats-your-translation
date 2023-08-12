@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Pictocrypto-Regular';
-  src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
-       url('/fonts/Pictocrypto-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .profileHeader {
 }
 
@@ -28,7 +20,6 @@
 
 .profileName {
   margin-left: 2.5%;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .tabs {
@@ -48,12 +39,10 @@
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   transition: color 0.1s ease-in-out;
-  font-family: 'Pictocrypto-Regular';
 }
 
 .tab:hover {
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Pictocrypto-Regular';
 }
 
 .activeTab {
