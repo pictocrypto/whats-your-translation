@@ -71,7 +71,7 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/showcase/books/books" className={styles.link}>
+            <Link href="/whats_your/books" className={styles.link}>
               Books
             </Link>
             {address && (

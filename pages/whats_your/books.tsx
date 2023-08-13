@@ -1,8 +1,9 @@
 import { useContract, useNFTs } from "@thirdweb-dev/react";
 import React from "react";
-import Container from "../components/Container/Container";
-import NFTGrid from "../components/NFT/NFTGrid";
-import { NFT_COLLECTION_ADDRESS } from "../const/contractAddresses";
+import Container from "../../components/Container/Container";
+import NFTGrid from "../../components/NFT/NFTGrid";
+import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
+import styles from "../../styles/Home.module.css";
 
 export default function Buy() {
   // Load all of the NFTs from the NFT Collection
@@ -11,8 +12,8 @@ export default function Buy() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Soul Symbols</h1>
-      <p>Get Yourself A Soul Symbol</p>
+      <h1 className={styles.heroSubtitleWhite}>Soul Symbols</h1>
+      <p className={styles.heroSubtitleWhite}>Get Yourself A Soul Symbol</p>
       <NFTGrid
         data={data}
         isLoading={isLoading}
