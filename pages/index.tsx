@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           <div className={styles.heroVideoBackground}>
             <div className={styles.heroVideoBackgroundInner}>
               <video id="video-background" autoPlay loop muted>
-                <source src="/output.mp4" type="video/mp4" />
+                <source src="https://ipfs.io/ipfs/QmPkxbkCeXrnRhLJNQT56HHkcbhvNDjW9bg2CxYUfAhjq5?filename=output.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

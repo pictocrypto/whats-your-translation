@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Pictocrypto-Regular';
+  src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
+       url('/fonts/Pictocrypto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .nftImage {
   /* Override default NFT renderer width */
   width: 100% !important;
@@ -10,28 +18,31 @@
   font-size: 12px;
   margin: 0px;
   margin-top: 12px;
+  font-family: 'Pictocrypto-Regular';
 }
 
 .nftName {
+
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: wrap;
+  overflow: show;
   max-width: 100%;
   color: #fff;
   font-family: inherit;
   vertical-align: inherit;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 18px;
   font-weight: 700;
   margin: 0px;
-  margin-bottom: 12px;
-  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: 'Pictocrypto-Regular';
 }
 
 .priceContainer {
   display: flex;
   width: 100%;
-  gap: 8px;
+  gap: 10px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -61,6 +72,7 @@
   line-height: 20px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
+  font-family: 'Pictocrypto-Regular';
 }
 
 .nftPriceValue {
@@ -71,10 +83,11 @@
   font-family: inherit;
   vertical-align: inherit;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 10px;
   font-weight: 500;
   margin: 0px;
   padding: 0px;
   border: 0px;
   color: #fff;
+  font-family: 'Pictocrypto-Regular';
 }
