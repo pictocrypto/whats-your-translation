@@ -10,7 +10,7 @@ import {
 import React, { useState } from "react";
 import Container from "../../../components/Container/Container";
 import { GetStaticProps, GetStaticPaths } from "next";
-import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
+import { ChainId, NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
 import {
   ETHERSCAN_URL,
   MARKETPLACE_ADDRESS,
@@ -117,6 +117,9 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
     return txResult;
   }
 
+  
+
+
   return (
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
@@ -147,9 +150,19 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
               </div>
             )}
             
+   
             <div>
 
+              
+
             <h1 className={styles.title}>{nft.metadata.name}</h1>
+
+            </div>
+
+            {/*
+
+            <div>
+
             <a
               href={`https://app.darkblock.io/platform/matic-mumbai/nft/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
               target="_blank"
@@ -166,7 +179,20 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   Unlock Your Book
             </a>
 
-            </div>
+            </div>   */}
+
+            <iframe
+                allow="fullscreen"
+                style={{
+                  border: "none",
+                  height: "540px",
+                  width: "100%",
+                  borderRadius: "8px",
+               
+                }}
+                title="darkblock"
+                src={`https://app.darkblock.io/platform/matic-mumbai/embed/add/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
+              ></iframe>
 
           </div>
         </div>
