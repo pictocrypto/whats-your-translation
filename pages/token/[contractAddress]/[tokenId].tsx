@@ -17,12 +17,15 @@ import {
   NETWORK,
   NFT_COLLECTION_ADDRESS,
 } from "../../../const/contractAddresses";
-import styles from "../../../styles/Token.module.css";
+import styles from "../../../styles/Token.module.css"
 import Link from "next/link";
 import randomColor from "../../../util/randomColor";
 import Skeleton from "../../../components/Skeleton/Skeleton";
 import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../../../util/toastConfig";
+import BooksIcon from '../../../public/book.gif';
+import Image from "next/image";
+
 
 type Props = {
   nft: NFT;
@@ -303,15 +306,17 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     });
                   }}
                 >
-                  Come and Get Me!
+                  Get Your Key!
                 </Web3Button>
-
-                
               </>
             )}
+
+            
+
           </div>
         </div>
       </Container>
+
     </>
   );
 }

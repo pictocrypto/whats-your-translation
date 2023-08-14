@@ -38,7 +38,7 @@ const Home: NextPage = () => {
           <div className={styles.heroAssetFrame}>
           </div>
           <div className={styles.heroBodyContainer}>
-          <img src="wyt.png" width="500" height="200"></img>
+          <img src="wyt.png" width="400" height="160"></img>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>

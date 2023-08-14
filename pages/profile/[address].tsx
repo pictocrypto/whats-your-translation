@@ -8,7 +8,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Container from "../../components/Container/Container";
 import ListingWrapper from "../../components/ListingWrapper/ListingWrapper";
-import NFTGrid from "../../components/NFT/NFTGrid";
+import NFTGridOwned from "../../components/NFT/NFTGridOwned";
 import Skeleton from "../../components/Skeleton/Skeleton";
 import {
   MARKETPLACE_ADDRESS,
@@ -99,7 +99,7 @@ export default function ProfilePage() {
           tab === "nfts" ? styles.activeTabContent : styles.tabContent
         }`}
       >
-        <NFTGrid
+        <NFTGridOwned
           data={ownedNfts}
           isLoading={loadingOwnedNfts}
           emptyText="Looks like you don't have any NFTs from this collection. Head to the buy page to buy some!"

@@ -75,7 +75,7 @@ export function Navbar() {
               Books
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/books/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/book.gif"
