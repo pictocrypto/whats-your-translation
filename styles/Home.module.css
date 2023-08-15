@@ -11,9 +11,7 @@
 
 .container {
   min-height: 99vh;
-  min-width: 96vw;
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   contain: paint;
@@ -128,6 +126,7 @@
   text-align: center;
   transform: translateY(5px);
   font-family: 'Pictocrypto-Regular', sans-serif;
+  text-align: 'center';
 }
 
 .heroCtaContainer {
@@ -512,19 +511,27 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensure the video is rendered behind other content */
+  z-index: -1;
+  overflow: hidden;
 }
 
 .heroVideoBackgroundInner {
-  width: 100%;
-  height: 100%;
-  overflow: hidden; /* Hide any overflow from the video */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw; /* Always full viewport width */
+  height: 100vh; /* Always full viewport height */
+  transform: translateX(-50%);
+  pointer-events: none; /* Allow interactions with content above */
 }
 
 #video-background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire container */
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 
@@ -574,3 +581,34 @@
   font-family: 'Pictocrypto-Regular', sans-serif;
   text-align:center;vertical-align:center
 }
+
+.gif {
+  max-width: 90%; /* Make the GIF fit within the container's width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* ... (existing styles) */
+
+.instructionsContainer {
+  text-align: center;
+  margin-top: 2rem; /* Adjust as needed */
+}
+
+/* ... (existing styles) */
+
+/* Media Queries */
+@media (max-width: 750px) {
+  /* Adjust the font size and margins for smaller screens */
+  .heroTitle {
+    font-size: 30px;
+  }
+  .heroSubtitleWhite {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .instructionsContainer {
+    margin-top: 1rem;
+  }
+}
+
+/* ... (other media query styles) */

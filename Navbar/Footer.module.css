@@ -1,0 +1,121 @@
+.navContainer {
+  width: 100%;
+  display: flex;
+  align-items: flex-end; /* Align at the bottom */
+  justify-content: center;
+  position: fixed;
+  bottom: 0; /* Position at the bottom */
+  right: 0;
+  background-color: transparent !important;
+ 
+
+}
+
+.nav {
+  padding-left: 2em;
+  padding-right: 2em;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  max-width: 1260px;
+  background-color: transparent !important;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.navMiddle {
+  display: flex;
+  margin-left: 12px;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  line-height: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px; /* Adjust right padding */
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Align to the right */
+}
+
+
+.profileImage {
+  margin-top: 6px;
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttonLink:hover {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Sreens less than 720px */
+@media (max-width: 500px) {
+  .navConnect {
+    display: none !important;
+  }
+
+
+  .navRight {
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: flex-end; /* Align to the right */
+    gap: 16px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 20px;
+  }
+
+  .nav {
+    /* ... (other properties) */
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+}
+
+
+

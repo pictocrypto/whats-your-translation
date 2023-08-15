@@ -17,104 +17,38 @@ import SearchIcon from '../public/search.gif';
 
 const Home: NextPage = () => {
   return (
+    
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.hero}>
-          <div className={styles.heroVideoBackground}>
-            <div className={styles.heroVideoBackgroundInner}>
+          
+        <div className={styles.heroVideoBackground}>
               <video id="video-background" autoPlay loop muted>
                 <source src="https://ipfs.io/ipfs/QmPkxbkCeXrnRhLJNQT56HHkcbhvNDjW9bg2CxYUfAhjq5?filename=output.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
               </video>
-            </div>
-          </div>
-          <div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-          </div>
+        </div>
+
          
+
           <div className={styles.heroAssetFrame}>
           </div>
           <div className={styles.heroBodyContainer}>
-          <img src="wyt.png" width="300" height="120"></img>
+            <img src="wyt.png" width="300" height="120"></img>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
-                <span className={styles.heroTitleGradient}>
                 
+                <span className={styles.heroTitleGradient}>
+        
                 </span>
-                <br />
               </h1>
-              <h2><p className={styles.heroSubtitleWhite}>
-                <b>Little Text</b>
-              </p></h2>
-
-              <div className={styles.heroCtaContainer}>
-
-                <a
-                  href="https://discord.com/invite/VgusjxJMv9"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.myInstagramCta}
-                >
-                  <Image
-                    src={DiscordIcon}
-                    alt="Discord"
-                    width={30}
-                    height={30}
-                    className={styles.instagramIcon}
-                  />
-                  Join the Discord
-                </a>
-
-                <a
-                  href="https://www.youtube.com/channel/UCvMBNvPPJy54mxKIf_Hm5Ag"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.myInstagramCta}
-                >
-                  <Image
-                    src={youtubeIcon}
-                    alt="Youtube Icon"
-                    width={30}
-                    height={30}
-                    className={styles.instagramIcon}
-                  />
-                  Youtube
-                </a>
-
-                <a
-                  href="/services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.myInstagramCta}
-                >
-                  <Image
-                    src={servicesIcon}
-                    alt="Youtube Icon"
-                    width={30}
-                    height={30}
-                    className={styles.instagramIcon}
-                  />
-                  Services
-                </a>
               
-              </div>
 
               <div>
 
-              <p className={styles.heroSubtitleWhite}>
-                <b>PictoCrypto Technology</b>
-              </p>
-
               </div>
-
-              
-
               <div className={styles.heroCtaContainer}>
 
-              <a
+                <a
                   href="https://www.youtube.com/channel/UCvMBNvPPJy54mxKIf_Hm5Ag"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -125,11 +59,9 @@ const Home: NextPage = () => {
                     alt="PICTOCRYPTO Icon"
                     width={30}
                     height={30}
-                    className={styles.instagramIcon}
-                  />
+                    className={styles.instagramIcon} />
                   The Pictographs
                 </a>
-
                 <a
                   href="/services"
                   target="_blank"
@@ -141,22 +73,62 @@ const Home: NextPage = () => {
                     alt="Youtube Icon"
                     width={30}
                     height={30}
-                    className={styles.instagramIcon}
-                  />
+                    className={styles.instagramIcon} />
                   Other Techniques
                 </a>
-
-
-
-
               </div>
+              
+              {/* Instructions */}
+
+              <div className={styles.instructionsContainer}>
+              
+                <h2>How to Access Content:</h2>
+
+                  <div className={styles.instructionStep}>
+                    <p><b>Step 1:</b> Pick a Category</p>
+                    <img src="category.gif" alt="Clicking Category" />
+
+                  </div>
+
+                  <div className={styles.instructionStep}>
+
+                    <p><b>Step 2:</b> Select from Gallery</p>
+                    <img src="gallery.gif" alt="Selecting from Gallery" />
+
+                  </div>
+
+                  <div className={styles.instructionStep}>
+
+                    <p><b>Step 3:</b> Buy an NFT Key to Unlock</p>
+                    <img src="nft_purchase.gif" alt="NFT Purchase Process" />
+
+                  </div>
+
+                  <div className={styles.instructionStep}>
+
+                    <p><b>Step 4:</b> Go to Your Category Profile and Select Your Item</p>
+                    <img src="category_profile.gif" alt="Selecting from Category Profile" />
+
+                  </div>
+
+                  <div className={styles.instructionStep}>
+
+                    <p><b>Step 5:</b> Unlock and Enjoy Content</p>
+                    <img src="unlock_content.gif" alt="Unlocking and Enjoying Content" />
+
+                  </div>
+              
+              
 
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+    
   );
 };
+
 
 export default Home;

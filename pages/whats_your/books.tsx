@@ -11,9 +11,11 @@ export default function Buy() {
   const { data, isLoading } = useNFTs(contract);
 
   return (
+
+
     <Container maxWidth="lg">
-      <h1 className={styles.heroSubtitleWhite}>Soul Symbols</h1>
-      <p className={styles.heroSubtitleWhite}>Get Yourself A Soul Symbol</p>
+      <h1 className={styles.heroTitle}>Books</h1>
+      
       <NFTGrid
         data={data}
         isLoading={isLoading}
