@@ -82,8 +82,9 @@ export default function ProfilePage() {
         ${tab === "nfts" ? styles.activeTab : ""}`}
           onClick={() => setTab("nfts")}
         >
-          NFTs
+          My Keys
         </h3>
+        {/*
         <h3
           className={`${styles.tab} 
         ${tab === "listings" ? styles.activeTab : ""}`}
@@ -91,7 +92,7 @@ export default function ProfilePage() {
         >
           Listings
         </h3>
-        
+          */}
       </div>
 
       <div
@@ -102,7 +103,7 @@ export default function ProfilePage() {
         <NFTGridOwned
           data={ownedNfts}
           isLoading={loadingOwnedNfts}
-          emptyText="Looks like you don't have any NFTs from this collection. Head to the buy page to buy some!"
+          emptyText="Nothing found in your wallet right now. You're welcome to explore offerings from our menu above."
         />
       </div>
 

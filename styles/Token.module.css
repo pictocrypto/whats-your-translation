@@ -1,3 +1,12 @@
+.font-face {
+  font-family: 'Pictocrypto-Regular';
+  src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
+       url('/fonts/Pictocrypto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 .container {
   max-width: 100%;
   display: flex;
@@ -87,6 +96,7 @@
   margin: 0px;
   margin-left: 16px;
   margin-right: 16px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .title {
@@ -97,6 +107,7 @@
   margin-bottom: 4px;
   margin-left: 16px;
   margin-right: 16px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .nftOwnerContainer {
@@ -133,6 +144,7 @@
   flex-direction: column;
   height: 100%;
   margin-top: 16px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .label {
@@ -145,15 +157,18 @@
   font-weight: 600;
   margin: 0px;
   color: rgba(255, 255, 255, 0.9);
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .descriptionContainer {
   padding-left: 16px;
   padding-right: 16px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .descriptionTitle {
   margin-top: 32px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .traitsContainer {
@@ -194,18 +209,21 @@
   font-weight: 600;
   margin: 0px;
   color: rgba(255, 255, 255, 0.9);
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .traitName {
   font-weight: 400;
   margin: 0px;
   color: rgba(255, 255, 255, 0.6);
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .eventContainer {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .txHashArrow {
@@ -235,6 +253,7 @@
   width: 100%;
   margin: 0px;
   margin-bottom: 12px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .pricingValue {
@@ -244,11 +263,14 @@
   color: rgba(255, 255, 255, 0.9);
   margin: 0px;
   border-radius: 8px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .buyButton:hover {
   cursor: pointer;
   opacity: 0.8 !important;
+  font-family: 'Pictocrypto-Regular';
+  
 }
 
 .listingTimeContainer {
@@ -265,6 +287,7 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   margin: 0px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .or {
@@ -294,7 +317,19 @@
 .btn {
   /* fill remainin width */
   width: 100% !important;
+  
 }
+
+.keyButton {
+  /* Define your font properties here */
+  font-family: 'Pictocrypto-Regular' !important;
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: 500; /* Adjust font weight as needed */
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  /* Add any other styling you want */
+}
+
 
 
 .codeButton {
@@ -322,6 +357,7 @@
   letter-spacing: 0.2px;
   line-height: 20px;
   margin-right: 8px;
+  font-family: 'Pictocrypto-Regular', sans-serif;
 }
 
 .codeButton:hover {

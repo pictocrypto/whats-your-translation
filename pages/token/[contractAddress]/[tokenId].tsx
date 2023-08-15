@@ -117,6 +117,8 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
     return txResult;
   }
 
+  
+
   return (
     <>
       <Toaster position="bottom-center" reverseOrder={false} />
@@ -132,22 +134,9 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
               <h3 className={styles.descriptionTitle}>Description</h3>
               <p className={styles.description}>{nft.metadata.description}</p>
 
-              <h3 className={styles.descriptionTitle}>Traits</h3>
+              
 
-              <div className={styles.traitsContainer}>
-                {Object.entries(nft?.metadata?.attributes || {}).map(
-                  ([key, value]) => (
-                    <div className={styles.traitContainer} key={key}>
-                      <p className={styles.traitName}>{key}</p>
-                      <p className={styles.traitValue}>
-                        {value?.toString() || ""}
-                      </p>
-                    </div>
-                  )
-                )}
-              </div>
-
-              <h3 className={styles.descriptionTitle}>History</h3>
+              <h3 className={styles.descriptionTitle}></h3> 
 
               <div className={styles.traitsContainer}>
                 {transferEvents?.map((event, index) => (
@@ -208,27 +197,43 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 <p className={styles.collectionName}>{contractMetadata.name}</p>
               </div>
             )}
+            
             <h1 className={styles.title}>{nft.metadata.name}</h1>
-            <p className={styles.collectionName}>Token ID #{nft.metadata.id}</p>
 
+            {/*
+          
+            <p className={styles.collectionName}>Token ID #{nft.metadata.id}</p>
+            */}
             <Link
+            
               href={`/profile/${nft.owner}`}
               className={styles.nftOwnerContainer}
             >
               {/* Random linear gradient circle shape */}
+
+              {/*
               <div
+              
                 className={styles.nftOwnerImage}
                 style={{
                   background: `linear-gradient(90deg, ${randomColor1}, ${randomColor2})`,
                 }}
+              
               />
+              */}
               <div className={styles.nftOwnerInfo}>
-                <p className={styles.label}>Current Owner</p>
+                
+               {/* <p className={styles.label}>Current Owner</p>
                 <p className={styles.nftOwnerAddress}>
                   {nft.owner.slice(0, 8)}...{nft.owner.slice(-4)}
                 </p>
+              */}
               </div>
+              
+
             </Link>
+
+            
 
             <div className={styles.pricingContainer}>
               {/* Pricing information */}
@@ -290,7 +295,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 <Web3Button
                   contractAddress={MARKETPLACE_ADDRESS}
                   action={async () => await buyListing()}
-                  className={styles.btn}
+                  className="styles.keyButton"
                   onSuccess={() => {
                     toast(`Purchase success!`, {
                       icon: "✅",
