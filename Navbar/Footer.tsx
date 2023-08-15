@@ -24,7 +24,7 @@ export function Footer() {
           </Link>
 
          
-            <Link href="https://discord.com/invite/VgusjxJMv9" className={styles.link}>
+            <Link href="https://discord.com/invite/VgusjxJMv9" className={styles.link} target="blank">
             <Image
               src="/discord.png"
               width={25}
@@ -33,7 +33,7 @@ export function Footer() {
             />
             </Link>
 
-            <Link href="https://www.youtube.com/@whatsyourtranslation" className={styles.link}>
+            <Link href="https://www.youtube.com/@whatsyourtranslation" className={styles.link} target="blank">
             <Image
               src="/youtube.png"
               width={27}
