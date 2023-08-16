@@ -14,6 +14,18 @@ export function Footer() {
       <nav className={styles.nav}>
         <div className={styles.navRight}>
 
+          
+        <Link href="/pictocrypto" className={styles.link}>
+            <Image
+              src="/PICTOCRYPTO.gif"
+              width={25}
+              height={25}
+              alt="Home"
+            />
+          </Link>
+          
+          
+          
           <Link href="/services" className={styles.link}>
             <Image
               src="/services.gif"

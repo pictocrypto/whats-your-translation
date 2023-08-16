@@ -7,6 +7,7 @@ import youtubeIcon from '../public/youtube.png';
 import servicesIcon from '../public/services.gif';
 import PictoCryptoIcon from '../public/PICTOCRYPTO.gif';
 import SearchIcon from '../public/search.gif';
+import MaticIcon from "../public/matic.png";
 
 
 
@@ -38,30 +39,30 @@ const Home: NextPage = () => {
               <h1 className={styles.heroTitle}>
                 
                 <span className={styles.heroTitleGradient}>
+                  
         
                 </span>
               </h1>
+
+
+
               
 
-              <div>
+              <div className={styles.iframecontainer}>
+
+              
+
+              <iframe 
+                width="360" 
+                height="240" 
+                src="https://www.youtube.com/embed/DhOyO-h1sGs" 
+                >
+                </iframe>
 
               </div>
               <div className={styles.heroCtaContainer}>
 
-                <a
-                  href="https://www.youtube.com/channel/UCvMBNvPPJy54mxKIf_Hm5Ag"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.myInstagramCta}
-                >
-                  <Image
-                    src={PictoCryptoIcon}
-                    alt="PICTOCRYPTO Icon"
-                    width={30}
-                    height={30}
-                    className={styles.instagramIcon} />
-                  The Pictographs
-                </a>
+               
                 <a
                   href="/services"
                   target="_blank"
@@ -76,51 +77,26 @@ const Home: NextPage = () => {
                     className={styles.instagramIcon} />
                   Other Techniques
                 </a>
+
+                <a
+                  href="https://faucet.polygon.technology/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.myInstagramCta}
+                >
+                  <Image
+                    src={MaticIcon}
+                    alt="Matic Icon"
+                    width={30}
+                    height={30}
+                    className={styles.instagramIcon} />
+                  Free TestNet Matic
+                </a>
               </div>
               
               {/* Instructions */}
 
-              <div className={styles.instructionsContainer}>
               
-                <h2>How to Access Content:</h2>
-
-                  <div className={styles.instructionStep}>
-                    <p><b>Step 1:</b> Pick a Category</p>
-                    <img src="category.gif" alt="Clicking Category" />
-
-                  </div>
-
-                  <div className={styles.instructionStep}>
-
-                    <p><b>Step 2:</b> Select from Gallery</p>
-                    <img src="gallery.gif" alt="Selecting from Gallery" />
-
-                  </div>
-
-                  <div className={styles.instructionStep}>
-
-                    <p><b>Step 3:</b> Buy an NFT Key to Unlock</p>
-                    <img src="nft_purchase.gif" alt="NFT Purchase Process" />
-
-                  </div>
-
-                  <div className={styles.instructionStep}>
-
-                    <p><b>Step 4:</b> Go to Your Category Profile and Select Your Item</p>
-                    <img src="category_profile.gif" alt="Selecting from Category Profile" />
-
-                  </div>
-
-                  <div className={styles.instructionStep}>
-
-                    <p><b>Step 5:</b> Unlock and Enjoy Content</p>
-                    <img src="unlock_content.gif" alt="Unlocking and Enjoying Content" />
-
-                  </div>
-              
-              
-
-            </div>
           </div>
         </div>
       </div>

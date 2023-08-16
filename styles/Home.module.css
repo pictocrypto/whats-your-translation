@@ -609,6 +609,11 @@
   .instructionsContainer {
     margin-top: 1rem;
   }
+
+  .iframecontainer {
+    margin: 0 25px;
+  }
+
 }
 
 /* ... (other media query styles) */
