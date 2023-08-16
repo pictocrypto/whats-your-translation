@@ -62,22 +62,6 @@ const Home: NextPage = () => {
               </div>
               <div className={styles.heroCtaContainer}>
 
-               
-                <a
-                  href="/services"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.myInstagramCta}
-                >
-                  <Image
-                    src={SearchIcon}
-                    alt="Youtube Icon"
-                    width={30}
-                    height={30}
-                    className={styles.instagramIcon} />
-                  Other Techniques
-                </a>
-
                 <a
                   href="https://faucet.polygon.technology/"
                   target="_blank"

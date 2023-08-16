@@ -36,7 +36,7 @@ export function Navbar() {
 
         <div className={styles.navMiddle}>
           <div className={styles.linkContainer}>
-            <Link href="/showcase/art/art" className={styles.link}>
+            <Link href="/whats_your/art" className={styles.link}>
               Art
             </Link>
             {address && (
@@ -54,7 +54,7 @@ export function Navbar() {
 
           {/* Duplicate the above pattern for other main menu links */}
           <div className={styles.linkContainer}>
-            <Link href="/showcase/audio/audio" className={styles.link}>
+            <Link href="/whats_your/audio" className={styles.link}>
               Audio
             </Link>
             {address && (
@@ -88,7 +88,7 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/showcase/courses/courses" className={styles.link}>
+            <Link href="/whats_your/courses" className={styles.link}>
               Courses
             </Link>
             {address && (
@@ -105,7 +105,7 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/showcase/events/events" className={styles.link}>
+            <Link href="/whats_your/events" className={styles.link}>
               Events
             </Link>
             {address && (
@@ -122,7 +122,7 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/whats_your/festivals/offerings" className={styles.link}>
+            <Link href="/whats_your/festivals" className={styles.link}>
               Festivals
             </Link>
             {address && (
@@ -139,7 +139,7 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/showcase/video/video" className={styles.link}>
+            <Link href="/whats_your/video" className={styles.link}>
               Video
             </Link>
             {address && (
