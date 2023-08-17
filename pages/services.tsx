@@ -55,10 +55,10 @@ return (
     </div>
     <div className={styles.tabContentContainer}>
       {[
-        "Unlock a new dimension of online experiences with our Private Web3 Sites. Immerse yourself in a world of exclusive content and connections, protected by the power of NFT-gated access. Gain entry to hidden treasures, premium insights, and personalized interactions, all while embracing the future of the decentralized web.",
-        "Join the forefront of digital community engagement through NFT Gated Communities. Connect with like-minded individuals who share your passions and interests, while leveraging the security and uniqueness of NFTs to create an environment where your interactions are valued and protected. Explore the limitless possibilities of decentralized networking today.",
-        "Empower your affiliate marketing strategy with our innovative Web3 Affiliate Marketplaces. Harness the potential of decentralized networks to amplify your reach and earnings. Share your custom site seamlessly, and watch as your commissions grow in a borderless digital landscape, where transparency and efficiency redefine the affiliate experience.",
-        "Prepare for the future of content consumption with our upcoming Subscription Services. Support your favorite creators sustainably through recurring payments, ensuring they can continue producing the content you love. By embracing Web3 technology, we're reimagining the subscription model to empower creators and provide subscribers with an unparalleled sense of connection and value. Stay tuned for the launch of this exciting feature!"
+        "Let your audience mint your web3 services or offerings directly from your own fully functioning web3 site. Mint new NFT keys or have them view offerings directly from a showcase NFT gallery. Wallet-connected profiles allow users to unlock gated content with ease.",
+        "NFT holders connect wallets and can automatically receive exclusive roles in Discord servers, exclusive access to Telegram groups, google docs, GitHub repositories, and more without having to wait for email confirmation or handing over credit card info or other private information.",
+        "Duplicate NFT marketplaces with affiliate commissions pre-programmed in provides incentive for your NFT offerings to spread far and wide. An NFT sold in one marketplace is removed from all other marketplaces simultaneously, updated in real time, preventing double sales of the same item and keeping accurate inventory.",
+        "Monthly recurring revenue streams generated from podcast subscription, course access, or general consulting. Users purchase subscription NFT and funds are automatically deducted from the wallets on a periodic basis until cancellation. Great for creators looking to escape 10-20% fee other subscription-based service providers charge… coming soon"
       ].map((content, index) => (
         <div key={index} className={styles.tabContentWrapper}>
           <div
