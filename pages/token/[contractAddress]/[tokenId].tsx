@@ -295,7 +295,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 <Web3Button
                   contractAddress={MARKETPLACE_ADDRESS}
                   action={async () => await buyListing()}
-                  className="styles.keyButton"
+                  className={styles.keyButton}
                   onSuccess={() => {
                     toast(`Purchase success!`, {
                       icon: "✅",

@@ -1,3 +1,12 @@
+.body {
+  background: var(--black);
+  font-family: 'Perfect DOS VGA 437', sans-serif;
+  color: var(--white);
+  display: flex;
+  margin: 0;
+  text-align: center;
+}
+
 .font-face {
   font-family: 'Pictocrypto-Regular';
   src: url('/fonts/Pictocrypto-Regular.woff2') format('woff2'), /* Add other font formats here */
@@ -5,6 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 
 
 .container {

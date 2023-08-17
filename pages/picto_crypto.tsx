@@ -32,10 +32,8 @@ const Home: NextPage = () => {
          
 
           <div className={styles.heroAssetFrame}>
-           
           </div>
           <div className={styles.heroBodyContainer}>
-            <br></br><br></br>
             <img src="wyt.png" width="300" height="120"></img>
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>

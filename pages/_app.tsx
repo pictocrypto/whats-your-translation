@@ -6,6 +6,7 @@ import NextNProgress from "nextjs-progressbar";
 import { NETWORK } from "../const/contractAddresses";
 import "../styles/globals.css"; // Import the global styles here
 import localFont from '@next/font/local';
+import Script from "next/script";
 
 const myFont = localFont({ src: '../public/fonts/Pictocrypto-Regular.woff'})
 
@@ -30,8 +31,11 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Navbar />
       {/* Render the actual component (page) */}
       <Component {...pageProps} />
+      <Script />
 
       <Footer />
+      
+
     </ThirdwebProvider>
   );
 }

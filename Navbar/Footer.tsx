@@ -15,7 +15,7 @@ export function Footer() {
         <div className={styles.navRight}>
 
           
-        <Link href="/pictocrypto" className={styles.link}>
+        <Link href="/the_letters" className={styles.link}>
             <Image
               src="/PICTOCRYPTO.gif"
               width={25}
@@ -36,7 +36,7 @@ export function Footer() {
           </Link>
 
          
-            <Link href="https://discord.com/invite/VgusjxJMv9" className={styles.link} target="blank">
+            <Link href="https://discord.gg/VyEBcbegwk" className={styles.link} target="blank">
             <Image
               src="/discord.png"
               width={25}
