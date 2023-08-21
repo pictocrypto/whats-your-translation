@@ -11,12 +11,12 @@ import {
   Web3Button,
 } from "@thirdweb-dev/react";
 import {
-  MARKETPLACE_ADDRESS,
-  NFT_COLLECTION_ADDRESS,
-} from "../../const/contractAddresses";
+  MARKETPLACE_ADDRESS_ART,
+  NFT_COLLECTION_ADDRESS_ART,
+} from "../../../const/contractAddresses";
 import { useRouter } from "next/router";
 import toast, { Toaster } from "react-hot-toast";
-import toastStyle from "../../util/toastConfig";
+import toastStyle from "../../../util/toastConfig";
 
 type Props = {
   nft: NFTType;
@@ -43,14 +43,14 @@ export default function SaleInfo({ nft }: Props) {
   const router = useRouter();
   // Connect to marketplace contract
   const { contract: marketplace } = useContract(
-    MARKETPLACE_ADDRESS,
+    MARKETPLACE_ADDRESS_ART,
     "marketplace-v3"
   );
 
   // useContract is a React hook that returns an object with the contract key.
   // The value of the contract key is an instance of an NFT_COLLECTION on the blockchain.
   // This instance is created from the contract address (NFT_COLLECTION_ADDRESS)
-  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS);
+  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS_ART);
 
   // Hook provides an async function to create a new auction listing
   const { mutateAsync: createAuctionListing } =
@@ -67,7 +67,7 @@ export default function SaleInfo({ nft }: Props) {
   const { register: registerAuction, handleSubmit: handleSubmitAuction } =
     useForm<AuctionFormData>({
       defaultValues: {
-        nftContractAddress: NFT_COLLECTION_ADDRESS,
+        nftContractAddress: NFT_COLLECTION_ADDRESS_ART,
         tokenId: nft.metadata.id,
         startDate: new Date(),
         endDate: new Date(),
@@ -81,13 +81,13 @@ export default function SaleInfo({ nft }: Props) {
     // Check if approval is required
     const hasApproval = await nftCollection?.call("isApprovedForAll", [
       nft.owner,
-      MARKETPLACE_ADDRESS,
+      MARKETPLACE_ADDRESS_ART,
     ]);
 
     // If it is, provide approval
     if (!hasApproval) {
       const txResult = await nftCollection?.call("setApprovalForAll", [
-        MARKETPLACE_ADDRESS,
+        MARKETPLACE_ADDRESS_ART,
         true,
       ]);
 
@@ -107,7 +107,7 @@ export default function SaleInfo({ nft }: Props) {
   const { register: registerDirect, handleSubmit: handleSubmitDirect } =
     useForm<DirectFormData>({
       defaultValues: {
-        nftContractAddress: NFT_COLLECTION_ADDRESS,
+        nftContractAddress: NFT_COLLECTION_ADDRESS_ART,
         tokenId: nft.metadata.id,
         startDate: new Date(),
         endDate: new Date(),
@@ -197,7 +197,7 @@ export default function SaleInfo({ nft }: Props) {
           />
 
           <Web3Button
-            contractAddress={MARKETPLACE_ADDRESS}
+            contractAddress={MARKETPLACE_ADDRESS_ART}
             action={async () => {
               await handleSubmitDirect(handleSubmissionDirect)();
             }}
@@ -215,7 +215,7 @@ export default function SaleInfo({ nft }: Props) {
                 position: "bottom-center",
               });
               router.push(
-                `/token/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`
+                `/token/${NFT_COLLECTION_ADDRESS_ART}/${nft.metadata.id}`
               );
             }}
           >

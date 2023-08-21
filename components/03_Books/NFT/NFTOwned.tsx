@@ -9,7 +9,7 @@ import React from "react";
 import {
   MARKETPLACE_ADDRESS,
   NFT_COLLECTION_ADDRESS,
-} from "../../const/contractAddresses";
+} from "../../../const/contractAddresses";
 
 import styles from "./NFT.module.css";
 

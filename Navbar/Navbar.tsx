@@ -40,7 +40,7 @@ export function Navbar() {
               Art
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/art/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/01_Art/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/art.gif"
@@ -58,7 +58,7 @@ export function Navbar() {
               Audio
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/audio/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/02_Audio/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/music.gif"
@@ -75,7 +75,7 @@ export function Navbar() {
               Books
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/03_Books/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/book.gif"

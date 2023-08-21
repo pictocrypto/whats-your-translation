@@ -1,10 +1,10 @@
 import type { NFT as NFTType } from "@thirdweb-dev/sdk";
 import Link from "next/link";
 import React from "react";
-import { NFT_COLLECTION_ADDRESS } from "../../const/contractAddresses";
-import Skeleton from "../Skeleton/Skeleton";
-import NFT from "./NFTOwned";
-import styles from "../../styles/Buy.module.css";
+import { NFT_COLLECTION_ADDRESS_AUDIO } from "../../../const/contractAddresses";
+import Skeleton from "../../Skeleton/Skeleton";
+import NFT from "./NFT";
+import styles from "../../../styles/Buy.module.css";
 
 type Props = {
   isLoading: boolean;
@@ -31,7 +31,7 @@ export default function NFTGrid({
         data.map((nft) =>
           !overrideOnclickBehavior ? (
             <Link
-              href={`/owned/${NFT_COLLECTION_ADDRESS}/${nft.metadata.id}`}
+              href={`/02_Audio/token/${NFT_COLLECTION_ADDRESS_AUDIO}/${nft.metadata.id}`}
               key={nft.metadata.id}
               className={styles.nftContainer}
             >

@@ -6,16 +6,16 @@ import {
 } from "@thirdweb-dev/react";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import Container from "../../components/Container/Container";
-import ListingWrapper from "../../components/03_Books/ListingWrapper/ListingWrapper";
-import NFTGridOwned from "../../components/03_Books/NFT/NFTGridOwned";
-import Skeleton from "../../components/Skeleton/Skeleton";
+import Container from "../../../components/Container/Container";
+import ListingWrapper from "../../../components/01_Art/ListingWrapper/ListingWrapper";
+import NFTGridOwned from "../../../components/01_Art/NFT/NFTGridOwned";
+import Skeleton from "../../../components/Skeleton/Skeleton";
 import {
-  MARKETPLACE_ADDRESS,
-  NFT_COLLECTION_ADDRESS,
-} from "../../const/contractAddresses";
-import styles from "../../styles/Profile.module.css";
-import randomColor from "../../util/randomColor";
+  MARKETPLACE_ADDRESS_ART,
+  NFT_COLLECTION_ADDRESS_ART,
+} from "../../../const/contractAddresses";
+import styles from "../../../styles/Profile.module.css";
+import randomColor from "../../../util/randomColor";
 
 const [randomColor1, randomColor2, randomColor3, randomColor4] = [
   randomColor(),
@@ -28,10 +28,10 @@ export default function ProfilePage() {
   const router = useRouter();
   const [tab, setTab] = useState<"nfts" | "listings" | "auctions">("nfts");
 
-  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS);
+  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS_ART);
 
   const { contract: marketplace } = useContract(
-    MARKETPLACE_ADDRESS,
+    MARKETPLACE_ADDRESS_ART,
     "marketplace-v3"
   );
 
