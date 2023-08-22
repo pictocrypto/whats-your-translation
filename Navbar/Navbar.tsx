@@ -143,7 +143,7 @@ export function Navbar() {
               Video
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/video/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/07_Video/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/movie.gif"

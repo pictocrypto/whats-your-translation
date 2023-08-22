@@ -24,7 +24,7 @@ export const NFT_COLLECTION_ADDRESS_BOOKS = "";
 export const NFT_COLLECTION_ADDRESS_COURSES = "";
 export const NFT_COLLECTION_ADDRESS_EVENTS = "";
 export const NFT_COLLECTION_ADDRESS_FESTIVALS = "";
-export const NFT_COLLECTION_ADDRESS_VIDEO = "";
+export const NFT_COLLECTION_ADDRESS_VIDEO = "0xE5EA6cFcA37BB2f375471D397fAD6567BA0974E8";
 
 // (Optional) Set up the URL of where users can view transactions on
 // For example, below, we use Mumbai.polygonscan to view transactions on the Mumbai testnet.
