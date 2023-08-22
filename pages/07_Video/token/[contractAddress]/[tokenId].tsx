@@ -13,9 +13,9 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { NFT, ThirdwebSDK } from "@thirdweb-dev/sdk";
 import {
   ETHERSCAN_URL,
-  MARKETPLACE_ADDRESS,
+  MARKETPLACE_ADDRESS_VIDEO,
   NETWORK,
-  NFT_COLLECTION_ADDRESS,
+  NFT_COLLECTION_ADDRESS_VIDEO,
 } from "../../../../const/contractAddresses";
 import styles from "../../../../styles/Token.module.css"
 import Link from "next/link";
@@ -39,23 +39,23 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
   // Connect to marketplace smart contract
   const { contract: marketplace, isLoading: loadingContract } = useContract(
-    MARKETPLACE_ADDRESS,
+    MARKETPLACE_ADDRESS_VIDEO,
     "marketplace-v3"
   );
 
   // Connect to NFT Collection smart contract
-  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS);
+  const { contract: nftCollection } = useContract(NFT_COLLECTION_ADDRESS_VIDEO);
 
   const { data: directListing, isLoading: loadingDirect } =
     useValidDirectListings(marketplace, {
-      tokenContract: NFT_COLLECTION_ADDRESS,
+      tokenContract: NFT_COLLECTION_ADDRESS_VIDEO,
       tokenId: nft.metadata.id,
     });
 
   // 2. Load if the NFT is for auction
   const { data: auctionListing, isLoading: loadingAuction } =
     useValidEnglishAuctions(marketplace, {
-      tokenContract: NFT_COLLECTION_ADDRESS,
+      tokenContract: NFT_COLLECTION_ADDRESS_VIDEO,
       tokenId: nft.metadata.id,
     });
 
@@ -88,7 +88,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
       );
     } else if (directListing?.[0]) {
       txResult = await marketplace?.offers.makeOffer({
-        assetContractAddress: NFT_COLLECTION_ADDRESS,
+        assetContractAddress: NFT_COLLECTION_ADDRESS_VIDEO,
         tokenId: nft.metadata.id,
         totalPrice: bidValue,
       });
@@ -293,7 +293,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
             ) : (
               <>
                 <Web3Button
-                  contractAddress={MARKETPLACE_ADDRESS}
+                  contractAddress={MARKETPLACE_ADDRESS_VIDEO}
                   action={async () => await buyListing()}
                   className={styles.keyButton}
                   onSuccess={() => {
@@ -331,7 +331,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   const sdk = new ThirdwebSDK(NETWORK);
 
-  const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);
+  const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS_VIDEO);
 
   const nft = await contract.erc1155.get(tokenId);
 
@@ -353,14 +353,14 @@ export const getStaticProps: GetStaticProps = async (context) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const sdk = new ThirdwebSDK(NETWORK);
 
-  const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS);
+  const contract = await sdk.getContract(NFT_COLLECTION_ADDRESS_VIDEO);
 
   const nfts = await contract.erc1155.getAll();
 
   const paths = nfts.map((nft) => {
     return {
       params: {
-        contractAddress: NFT_COLLECTION_ADDRESS,
+        contractAddress: NFT_COLLECTION_ADDRESS_VIDEO,
         tokenId: nft.metadata.id,
       },
     };
