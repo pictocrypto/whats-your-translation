@@ -122,14 +122,14 @@ export function Navbar() {
           </div>
 
           <div className={styles.linkContainer}>
-            <Link href="/whats_your/festivals" className={styles.link}>
-              Festivals
+            <Link href="/whats_your/memberships" className={styles.link}>
+              Memberships
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/festivals/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/06_Memberships/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
-                  src="/party.gif"
+                  src="/discord.gif"
                   width={18}
                   height={18}
                   alt="My Festivals"
