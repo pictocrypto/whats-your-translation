@@ -23,7 +23,7 @@ import randomColor from "../../../../util/randomColor";
 import Skeleton from "../../../../components/Skeleton/Skeleton";
 import toast, { Toaster } from "react-hot-toast";
 import toastStyle from "../../../../util/toastConfig";
-import GuildIcon from '../../../../public/guild.jpg';
+import DiscordIcon from '../../../../public/discord.png';
 import Image from "next/image";
 
 
@@ -182,14 +182,14 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
             </div>   */}
 
 <a
-                  href="https://guild.xyz/pictocrypto"
+                  href="https://discord.gg/6vQRQ5XqZK"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.myInstagramCta}
                 >
                   <Image
-                    src={GuildIcon}
-                    alt="Guild Icon"
+                    src={DiscordIcon}
+                    alt="Discord Icon"
                     width={30}
                     height={30}
                     className={styles.instagramIcon} />
