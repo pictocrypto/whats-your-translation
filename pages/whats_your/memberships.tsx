@@ -14,7 +14,7 @@ export default function Buy() {
 
 
     <Container maxWidth="lg">
-      <h1 className={styles.heroTitle}>Membership Access</h1>
+      <h1 className={styles.heroTitle}>Discord Access</h1>
       
       <NFTGrid
         data={data}

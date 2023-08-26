@@ -73,6 +73,19 @@ const Home: NextPage = () => {
 
 </div>
 
+                <div className={styles.liners}>
+                  While this is not an absolute list as to what the letters can mean, they can be a frame of reference to build on from there, but ultimately, what you see out of the words and letters will be a reflection of what is inside your own heart, so they act as a good gague to see where you are and how you see the world around you.
+                <br></br>
+                  More concepts to build upon the letters include:
+                <br></br>
+
+                  <ul>
+                    <li>The Festival Calendar</li>
+                    <li>Prime Root Conversions</li>
+                    <li>Vowel Point Substitutions</li>
+                  </ul>
+                </div>
+
 
 
 <table>

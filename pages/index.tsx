@@ -47,25 +47,10 @@ const Home: NextPage = () => {
               </h1>
 
 
-
-              
-
-              <div className={styles.iframecontainer}>
-
-              
-
-              <iframe 
-                width="360" 
-                height="240" 
-                src="https://www.youtube.com/embed/DhOyO-h1sGs" 
-                >
-                </iframe>
-
-              </div>
               <div className={styles.heroCtaContainer}>
 
                 <a
-                  href="https://faucet.polygon.technology/"
+                  href="https://mumbaifaucet.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.myInstagramCta}
@@ -79,6 +64,38 @@ const Home: NextPage = () => {
                   Free TestNet Matic
                 </a>
               </div>
+              
+
+             
+
+              <div className={styles.iframecontainer}>
+                <div className={styles.liners}>
+                  Book Access Demo
+                </div>
+
+              <iframe 
+                width="360" 
+                height="240" 
+                src="https://www.youtube.com/embed/DhOyO-h1sGs" 
+                >
+                </iframe>
+
+              </div>
+
+              <div className={styles.iframecontainer}>
+                <div className={styles.liners}>
+                  Discord Access Demo
+                </div>
+
+              <iframe 
+                width="360" 
+                height="240" 
+                src="https://www.youtube.com/embed/GGLeLFIkVxM" 
+                >
+                </iframe>
+
+              </div>
+              
               
               {/* Instructions */}
 
