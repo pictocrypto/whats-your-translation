@@ -109,7 +109,7 @@ export function Navbar() {
               Events
             </Link>
             {address && (
-              <Link className={`${styles.link} ${styles.profileLink}`} href={`/profile/courses/${address}`}>
+              <Link className={`${styles.link} ${styles.profileLink}`} href={`/05_Events/profile/${address}`}>
                 <Image
                   className={styles.profileImage}
                   src="/events.gif"
