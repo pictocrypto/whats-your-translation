@@ -199,7 +199,6 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
 
                 <a
                   href="https://app.unlock-protocol.com/keychain"
-                  target="_blank"
                   rel="noopener noreferrer"
                   className={styles.myInstagramCta}
                 >
