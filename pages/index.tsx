@@ -127,7 +127,7 @@ const Home: NextPage = () => {
           {/* Meta tags for website preview/thumbnail */}
       <meta property="og:title" content="What's Your Translation?" />
       <meta property="og:description" content="Private Web3 Sites, Gated Token Offerings & More" />
-      <meta property="og:image" content="https://ipfs.io/ipfs/QmbHgHmBYTPc6Vtdg6EP29NNsqx7aNT5wPopbEQ6qbHajF?filename=heyyou.png" />
+      <meta property="og:image" content="https://ipfs.io/ipfs/QmcPuxR7hxv9jx7Hxi7FWPJLgABuDckWcdchStSjcF2BbE?filename=heyyoumini.png" />
       <meta property="og:url" content="https://demo.whatsyourtranslation.com" />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="300" />
