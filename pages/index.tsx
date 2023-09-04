@@ -123,6 +123,19 @@ const Home: NextPage = () => {
               
             </div>
           </div></div>
+
+          {/* Meta tags for website preview/thumbnail */}
+      <meta property="og:title" content="What's Your Translation?" />
+      <meta property="og:description" content="Private Web3 Sites, Token Offerings, Community Management" />
+      <meta property="og:image" content="/wyt.png" />
+      <meta property="og:url" content="https://demo.whatsyourtranslation.com" />
+      
+      {/* For Twitter */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="What's Your Translation" />
+      <meta name="twitter:description" content="Private Web3 Sites, Token Offerings, Community Management" />
+      <meta name="twitter:image" content="/wyt.png" />
+      <meta name="twitter:url" content="https://demo.whatsyourtranslation.com" />
         
       
       </div>
