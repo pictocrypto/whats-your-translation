@@ -27,13 +27,13 @@ const Home: NextPage = () => {
               <video id="video-background" autoPlay loop muted>
                 <source src="https://ipfs.io/ipfs/QmPkxbkCeXrnRhLJNQT56HHkcbhvNDjW9bg2CxYUfAhjq5?filename=output.mp4" type="video/mp4" />
               </video>
+              
         </div>
 
-         
+        
 
-          <div className={styles.heroAssetFrame}>
-           
-          </div>
+          <div className={styles.heroAssetFrame}></div>
+          <div className="content">
           <div className={styles.heroBodyContainer}>
             <br></br><br></br>
             <img src="wyt.png" width="300" height="120"></img>
@@ -95,13 +95,36 @@ const Home: NextPage = () => {
                 </iframe>
 
               </div>
+
+              <div className={styles.iframecontainer}>
+                <div className={styles.liners}>
+                  Event Access Demo
+                </div>
+
+              <iframe 
+                width="360" 
+                height="240" 
+                src="https://www.youtube.com/embed/P0iVbwgRwHU" 
+                >
+                </iframe>
+
+              </div>
+
+
+
+
+
+
+      
               
               
               {/* Instructions */}
 
               
-          </div>
-        </div>
+            </div>
+          </div></div>
+        
+      
       </div>
     </div>
   </div>
