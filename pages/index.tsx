@@ -9,8 +9,6 @@ import PictoCryptoIcon from '../public/PICTOCRYPTO.gif';
 import SearchIcon from '../public/search.gif';
 import MaticIcon from "../public/matic.png";
 
-
-
 /**
  * Landing page with a simple gradient background and a hero asset.
  * Free to customize as you see fit.
@@ -30,8 +28,6 @@ const Home: NextPage = () => {
               
         </div>
 
-        
-
           <div className={styles.heroAssetFrame}></div>
           <div className="content">
           <div className={styles.heroBodyContainer}>
@@ -40,12 +36,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 
-                <span className={styles.heroTitleGradient}>
-                  
+                <span className={styles.heroTitleGradient}> 
         
                 </span>
               </h1>
-
 
               <div className={styles.heroCtaContainer}>
 
@@ -64,9 +58,6 @@ const Home: NextPage = () => {
                   Free TestNet Matic
                 </a>
               </div>
-              
-
-             
 
               <div className={styles.iframecontainer}>
                 <div className={styles.liners}>
@@ -109,23 +100,11 @@ const Home: NextPage = () => {
                 </iframe>
 
               </div>
-
-
-
-
-
-
-      
-              
               
               {/* Instructions */}
 
-              
             </div>
           </div></div>
-
-      
-
       
       <meta property="og:type" content="website"/>
       <meta property="og:url" content="https://demo.whatsyourtranslation.com/"/>
@@ -141,16 +120,6 @@ const Home: NextPage = () => {
       <meta property="twitter:title" content="What's Your Translation?"/>
       <meta property="twitter:description" content="Private Web3 Sites, Gated Token Offerings & More"/>
       <meta property="twitter:image" content="https://ipfs.io/ipfs/QmbHgHmBYTPc6Vtdg6EP29NNsqx7aNT5wPopbEQ6qbHajF?filename=heyyou.png"/>
-        
-
-
-   
-      
-      
-      
-        
-       
-        
       
       </div>
     </div>
