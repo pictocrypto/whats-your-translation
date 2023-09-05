@@ -130,8 +130,8 @@ const Home: NextPage = () => {
       <meta property="og:image" content="https://ipfs.io/ipfs/QmcPuxR7hxv9jx7Hxi7FWPJLgABuDckWcdchStSjcF2BbE?filename=heyyoumini.png" />
       <meta property="og:url" content="https://demo.whatsyourtranslation.com" />
       <meta property="og:image:type" content="image/png" />
-      <meta property="og:image:width" content="300" />
-      <meta property="og:image:height" content="300" />
+      <meta property="og:image:width" content="299" />
+      <meta property="og:image:height" content="299" />
       
       {/* For Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
