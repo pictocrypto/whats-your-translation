@@ -1,7 +1,7 @@
 import { useContract, useNFTs } from "@thirdweb-dev/react";
 import React from "react";
 import Container from "../../components/Container/Container";
-import NFTGrid from "../../components/03_Books/NFT/NFTGrid";
+import NFTGrid from "../../components/01_Art/NFT/NFTGrid";
 import { NFT_COLLECTION_ADDRESS_ART } from "../../const/contractAddresses";
 import styles from "../../styles/Home.module.css";
 

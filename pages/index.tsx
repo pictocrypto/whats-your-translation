@@ -39,7 +39,7 @@ const Home: NextPage = () => {
              
 
                 <a
-                  href="https://mumbaifaucet.com/"
+                  href="https://faucets.tatum.io/mumbai"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.myInstagramCta}
