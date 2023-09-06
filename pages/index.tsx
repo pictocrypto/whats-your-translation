@@ -34,14 +34,9 @@ const Home: NextPage = () => {
             <br></br><br></br>
             <img src="wyt.png" width="300" height="120"></img>
             <div className={styles.heroBody}>
-              <h1 className={styles.heroTitle}>
-                
-                <span className={styles.heroTitleGradient}> 
-        
-                </span>
-              </h1>
+              
 
-              <div className={styles.heroCtaContainer}>
+             
 
                 <a
                   href="https://mumbaifaucet.com/"
@@ -103,7 +98,7 @@ const Home: NextPage = () => {
               
               {/* Instructions */}
 
-            </div>
+            
           </div></div>
       
       <meta property="og:type" content="website"/>
