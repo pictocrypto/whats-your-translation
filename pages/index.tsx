@@ -22,9 +22,9 @@ const Home: NextPage = () => {
         <div className={styles.hero}>
           
         <div className={styles.heroVideoBackground}>
-              <video id="video-background" autoPlay loop muted>
-                <source src="https://ipfs.io/ipfs/QmPkxbkCeXrnRhLJNQT56HHkcbhvNDjW9bg2CxYUfAhjq5?filename=output.mp4" type="video/mp4" />
-              </video>
+        <video id="video-background" autoPlay loop muted playsInline>
+          <source src="https://ipfs.io/ipfs/QmPkxbkCeXrnRhLJNQT56HHkcbhvNDjW9bg2CxYUfAhjq5?filename=output.mp4" type="video/mp4" />
+        </video>
               
         </div>
 
