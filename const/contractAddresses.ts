@@ -2,8 +2,8 @@
 
 // 1. Set up the network your smart contracts are deployed to.
 // First, import the chain from the package, then set the NETWORK variable to the chain.
-import { Mumbai, Polygon } from "@thirdweb-dev/chains";
-export const NETWORK = Mumbai;
+import { Polygon } from "@thirdweb-dev/chains";
+export const NETWORK = Polygon;
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
@@ -12,7 +12,7 @@ export const MARKETPLACE_ADDRESS_ART = "0x1Ae0fa5a2E22E79336160757B8560f2791B261
 export const MARKETPLACE_ADDRESS_AUDIO = "0x4b8Cd34dFF95e3Eaac9dfACd71809b1D0670832a";
 export const MARKETPLACE_ADDRESS_BOOKS = "";
 export const MARKETPLACE_ADDRESS_COURSES = "0x7d228eDF0c7C78cd462eaFFC46eBd9072c054297";
-export const MARKETPLACE_ADDRESS_EVENTS = "0xe7c2CEae4Df7ED49B0d6A529957863FE76c59416";
+export const MARKETPLACE_ADDRESS_EVENTS = "0x0f76c37363Fc31E62556E56A83E6A57d90961580";
 export const MARKETPLACE_ADDRESS_MEMBERSHIPS = "0x90a7392580B85D560eEa3f1e7bBbc6D44828Df09";
 export const MARKETPLACE_ADDRESS_VIDEO = "0xF109677B8Af294e4C858d7ADD2cec4483608c5C4";
 
@@ -22,7 +22,7 @@ export const NFT_COLLECTION_ADDRESS_ART = "0xDcc8116Ae3074Fee8ab8615a494B60b52Ed
 export const NFT_COLLECTION_ADDRESS_AUDIO = "0x75134192047f7d0970D9c732716432B534E2706f";
 export const NFT_COLLECTION_ADDRESS_BOOKS = "";
 export const NFT_COLLECTION_ADDRESS_COURSES = "";
-export const NFT_COLLECTION_ADDRESS_EVENTS = "0xDce1D17442dB65e86BEcBE0aD07601Ca1cD49A2D";
+export const NFT_COLLECTION_ADDRESS_EVENTS = "0x084E09F9CD0B27cDfDAaDA39A28151597370Fc53";
 export const NFT_COLLECTION_ADDRESS_MEMBERSHIPS = "0xbBc4a7E3BDEd4663B152d25dC6c4C207428b17bd";
 export const NFT_COLLECTION_ADDRESS_VIDEO = "0xE5EA6cFcA37BB2f375471D397fAD6567BA0974E8";
 
